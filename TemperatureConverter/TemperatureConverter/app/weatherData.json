@@ -1,0 +1,44 @@
+[
+  {
+    "name": "San Jose",
+    "temperature": "36 F",
+    "wind": "31Kmph",
+    "humidity": "66%"
+  },
+    {
+      "name": "Seattle",
+      "temperature": "30 F",
+      "wind": "4Kmph",
+      "humidity": "9%"
+    },
+    {
+      "name": "New York",
+      "temperature": "20 F",
+      "wind": "8Kmph",
+      "humidity": "61%"
+    },
+    {
+      "name": "Chicago",
+      "temperature": "27 F",
+      "wind": "35Kmph",
+      "humidity": "2%"
+    },
+    {
+      "name": "Atlanta",
+      "temperature": "22 F",
+      "wind": "25Kmph",
+      "humidity": "5%"
+    },
+    {
+      "name": "Austin",
+      "temperature": "25 F",
+      "wind": "1Kmph",
+      "humidity": "5%"
+    },
+    {
+      "name": "Denver",
+      "temperature": "30 F",
+      "wind": "8Kmph",
+      "humidity": "48%"
+    }
+  ]
