@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="temperatureConverterController">
+<head>
+    <meta charset="utf-8" />
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div>
+        <h1>Temperature Converter</h1>
+            <table>
+                <tr>
+                    <td><label>Celsius: </label></td>
+                    <td>
+                        <input type="text"
+                               value={{celsius}}
+                               ng-change="toFahrenheit()"
+                               ng-model="celsius" />
+                    </td>
+                    <td><label>℃</label></td>
+                </tr>
+                <tr>
+                    <td><label>Fahrenheit: </label></td>
+                    <td>
+                        <input type="text"
+                               value={{fahrenheit}}
+                               ng-change="toCelsius()"
+                               ng-model="fahrenheit" />
+                    </td>
+                    <td><label>℉</label></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Weather Details</h1>
+            <table>
+                <tr>
+                    <td>Enter City: </td>
+                    <td>
+                        <input type="text"
+                               ng-change="getWeather()"
+                               ng-model="city"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{temperature}}</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>{{wind}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{humidity}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-mocks.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/temperatureConverterController.js"></script>
+    <script src="app/services/weatherDetailsService.js"></script>
+
+</body>
+</html>
